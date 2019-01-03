@@ -1,0 +1,10 @@
+<p>
+  hero-master works!
+</p>
+in this box is the content of the child component "app-hero-detail"
+<div style="border: 1px solid brown; padding: 10px">
+<app-hero-detail (anyRequest)="pickupTheEvent($event)" [fromParentToChild]="someMasterComHero"></app-hero-detail>
+</div>
+<br>
+and this is the hero's name (through a Hero-Object) passed to the master compontent: 
+<b>{{HeroName}}</b>

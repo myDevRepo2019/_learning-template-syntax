@@ -1,0 +1,9 @@
+<p>
+  Parent component:
+</p>
+<div style="border: 1px solid brown; padding:10px">
+  <app-sizer-child [(size)]="fontSizePx"></app-sizer-child>
+  below one has the same effect as the above one
+  <app-sizer-child [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></app-sizer-child>
+</div>
+  <div [style.font-size.px]="fontSizePx">Resized Text</div>
